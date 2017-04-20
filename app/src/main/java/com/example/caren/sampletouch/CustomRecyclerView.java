@@ -28,4 +28,10 @@ public class CustomRecyclerView extends RelativeLayout {
         return super.onTouchEvent(motionEvent);
     }
 
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
+        Log.i("touchevent", "onInterceptTouchEVENT RECYCLER_VIEW");
+        return super.onInterceptTouchEvent(motionEvent);
+    }
+
 }
